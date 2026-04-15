@@ -432,36 +432,3 @@ ul { list-style: none; }
   .footer-top { grid-template-columns: 1fr; }
   .about-stats { flex-direction: column; }
 }
-
-/* ===== BACK TO TOP BUTTON ===== */
-#backToTop {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  width: 48px;
-  height: 48px;
-  background: var(--color-primary);
-  color: #ffffff;
-  border: none;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  cursor: pointer;
-  box-shadow: 0 4px 16px rgba(10,122,110,0.4);
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#backToTop.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-#backToTop:hover {
-  background: #075f56;
-  transform: translateY(-3px);
-}
