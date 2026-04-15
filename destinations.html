@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destinations — Mesra Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="Style (2).css" />
+</head>
+<body>
+
+<!-- NAVIGATION BAR -->
+<nav class="site-nav" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Mesra Travel</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="about.html#contact" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="nav-mobile" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="destinations.html">Destinations</a>
+  <a href="about.html">About Us</a>
+  <a href="about.html#contact">Contact Us</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-content">
+    <span class="hero-badge">Handpicked for You</span>
+    <h1>Explore Our Destinations</h1>
+    <p>From tropical beaches to highland adventures.</p>
+  </div>
+</section>
+
+<!-- FILTER BUTTONS + CARDS -->
+<section class="section">
+  <div class="section-inner">
+
+    <!-- Filter buttons -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="beach">Beach</button>
+      <button class="filter-btn" data-filter="adventure">Adventure</button>
+      <button class="filter-btn" data-filter="city">City</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+    </div>
+
+    <!-- 8 Cards -->
+    <div class="cards-grid">
+
+      <article class="card dest-card" data-category="beach">
+        <div class="card-img-wrap">
+          <img src="images/01_semporna-sabah.jpg" alt="Semporna" />
+          <span class="card-badge">Beach</span>
+        </div>
+        <div class="card-body">
+          <h3>Semporna Island Hopping</h3>
+          <p>Snorkel with whale sharks. Dive Sipadan.</p>
+          <p class="price">RM 1,299 <small>/ person</small></p>
+          <a href="about.html#contact" class="btn btn-primary">Book Now</a>
+        </div>
+      </article>
+
+      <article class="card dest-card" data-category="beach">
+        <div class="card-img-wrap">
+          <img src="images/02_langkawi-beach.jpg" alt="Langkawi" />
+          <span class="card-badge">Beach</span>
+        </div>
+        <div class="card-body">
+          <h3>Langkawi Retreat</h3>
+          <p>Cable car, mangrove kayaking, beach sunsets.</p>
+          <p class="price">RM 899 <small>/ person</small></p>
+          <a href="about.html#contact" class="btn btn-primary">Book Now</a>
+        </div>
+      </article>
+
+      <article class="card dest-card" data-category="adventure">
+        <div class="card-img-wrap">
+          <img src="images/04_mount-kinabalu-sunrise.jpg" alt="Mount Kinabalu" />
+          <span class="card-badge">Adventure</span>
+        </div>
+        <div class="card-body">
+          <h3>Mount Kinabalu Climb</h3>
+          <p>Summit Southeast Asia's highest peak at 4,095m.</p>
+          <p class="price">RM 1,699 <small>/ person</small></p>
+          <a href="about.html#contact" class="btn btn-primary">Book Now</a>
+        </div>
+      </article>
+
+      <article class="card dest-card" data-category="city">
+        <div class="card-img-wrap">
+          <img src="images/03_kuala-lumpur-night.jpg" alt="KL" />
+          <span class="card-badge">City</span>
+        </div>
+        <div class="card-body">
+          <h3>Kuala Lumpur Explorer</h3>
+          <p>KLCC, Batu Caves, street food and shopping.</p>
+          <p class="price">RM 799 <small>/ person</small></p>
+          <a href="about.html#contact" class="btn btn-primary">Book Now</a>
+        </div>
+      </article>
+
+      <article class="card dest-card" data-category="city">
+        <div class="card-img-wrap">
+          <img src="images/05_penang-street-art.jpg" alt="Penang" />
+          <span class="card-badge">City</span>
+        </div>
+        <div class="card-body">
+          <h3>Penang Heritage Trail</h3>
+          <p>UNESCO streets, street art and hawker food.</p>
+          <p class="price">RM 699 <small>/ person</small></p>
+          <a href="about.html#contact" class="btn btn-primary">Book Now</a>
+        </div>
+      </article>
+
+      <article class="card dest-card" data-category="nature">
+        <div class="card-img-wrap">
+          <img src="images/06_tunku-rahman-park.jpg" alt="Tunku Rahman" />
+          <span class="card-badge">Nature</span>
+        </div>
+        <div class="card-body">
+          <h3>Tunku Abdul Rahman Park</h3>
+          <p>5 pristine islands, 20 minutes from KK city.</p>
+          <p class="price">RM 999 <small>/ person</small></p>
+          <a href="about.html#contact" class="btn btn-primary">Book Now</a>
+        </div>
+      </article>
+
+      <article class="card dest-card" data-category="nature">
+        <div class="card-img-wrap">
+          <img src="images/07_kinabalu-park-trek.jpg" alt="Kinabalu Park" />
+          <span class="card-badge">Nature</span>
+        </div>
+        <div class="card-body">
+          <h3>Kinabalu Rainforest Trek</h3>
+          <p>Cloud forest, pitcher plants, mountain hot springs.</p>
+          <p class="price">RM 849 <small>/ person</small></p>
+          <a href="about.html#contact" class="btn btn-primary">Book Now</a>
+        </div>
+      </article>
+
+      <article class="card dest-card" data-category="adventure">
+        <div class="card-img-wrap">
+          <img src="images/08_sabah-jungle-river.jpg" alt="Padas River" />
+          <span class="card-badge">Adventure</span>
+        </div>
+        <div class="card-body">
+          <h3>Padas River Rafting</h3>
+          <p>Grade 3-4 rapids on Sabah's most thrilling river.</p>
+          <p class="price">RM 349 <small>/ person</small></p>
+          <a href="about.html#contact" class="btn btn-primary">Book Now</a>
+        </div>
+      </article>
+
+    </div><!-- end cards-grid -->
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <p class="nav-logo" style="color:#fff; margin-bottom:1rem;">Mesra Travel</p>
+        <p>Your trusted travel partner for unforgettable journeys across Malaysia.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>Kota Kinabalu, Sabah</li>
+          <li><a href="tel:+60123456789">+60 12-345 6789</a></li>
+          <li><a href="mailto:hello@mesratravel.my">hello@mesratravel.my</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <span>2026 Mesra Travel. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

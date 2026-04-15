@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mesra Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVIGATION BAR -->
+<nav class="site-nav" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Mesra Travel</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="about.html#contact" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="nav-mobile" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="destinations.html">Destinations</a>
+  <a href="about.html">About Us</a>
+  <a href="about.html#contact">Contact Us</a>
+</div>
+
+<main>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <video class="hero-video" autoplay muted loop playsinline
+    poster="images/09_malaysia-beach-hero.jpg">
+    <source src="video/hero-background.mp4" type="video/mp4" />
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-badge">Malaysia's Friendliest Travel Agency</span>
+    <h1>Explore the World,<br><em>Feel at Home</em></h1>
+    <p class="hero-slogan">
+      Where every journey begins with a warm smile
+      and ends with a memory that lasts forever.
+    </p>
+    <div class="hero-actions">
+      <a href="destinations.html" class="btn btn-primary">Explore Destinations</a>
+      <a href="about.html#contact" class="btn btn-outline">Plan My Trip</a>
+    </div>
+  </div>
+</section>
+
+<!-- DESTINATION CARDS -->
+<section class="section" id="destinations-preview">
+  <div class="section-inner">
+    <h2 class="section-title">Popular Destinations</h2>
+    <div class="cards-grid">
+
+      <article class="card reveal">
+        <div class="card-img-wrap">
+          <img src="images/01_semporna-sabah.jpg" alt="Semporna, Sabah" />
+          <span class="card-badge">Beach</span>
+        </div>
+        <div class="card-body">
+          <h3>Semporna Island Hopping</h3>
+          <p>Snorkel with whale sharks and explore paradise islands.</p>
+          <a href="about.html#contact" class="btn btn-outline-dark">View Package</a>
+        </div>
+      </article>
+
+      <article class="card reveal reveal-delay-1">
+        <div class="card-img-wrap">
+          <img src="images/02_langkawi-beach.jpg" alt="Langkawi Beach" />
+          <span class="card-badge">Island</span>
+        </div>
+        <div class="card-body">
+          <h3>Langkawi Duty-Free Retreat</h3>
+          <p>Cable car, mangrove kayaking and beach sunsets.</p>
+          <a href="about.html#contact" class="btn btn-outline-dark">View Package</a>
+        </div>
+      </article>
+
+      <article class="card reveal reveal-delay-2">
+        <div class="card-img-wrap">
+          <img src="images/03_kuala-lumpur-night.jpg" alt="Kuala Lumpur" />
+          <span class="card-badge">City</span>
+        </div>
+        <div class="card-body">
+          <h3>Kuala Lumpur City Explorer</h3>
+          <p>KLCC, Batu Caves, street food and world-class shopping.</p>
+          <a href="about.html#contact" class="btn btn-outline-dark">View Package</a>
+        </div>
+      </article>
+
+    </div>
+
+    <div style="text-align:center; margin-top:3rem;">
+      <a href="destinations.html" class="btn btn-primary">See All Destinations</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <p class="nav-logo" style="color:#fff; margin-bottom:1rem;">Mesra Travel</p>
+        <p>Your trusted travel partner for unforgettable journeys across Malaysia and Asia.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Destinations</h4>
+        <ul>
+          <li><a href="destinations.html">Semporna</a></li>
+          <li><a href="destinations.html">Langkawi</a></li>
+          <li><a href="destinations.html">Penang</a></li>
+          <li><a href="destinations.html">Kuala Lumpur</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>University College Sabah Foundation, Kota Kinabalu, Sabah</li>
+          <li><a href="tel:+60123456789">+60 12-345 6789</a></li>
+          <li><a href="mailto:hello@mesratravel.my">hello@mesratravel.my</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <span>2026 Mesra Travel. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

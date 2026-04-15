@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Mesra Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="Style (3).css" />
+</head>
+<body>
+
+<!-- NAVIGATION BAR -->
+<nav class="site-nav" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Mesra Travel</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="about.html#contact" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="nav-mobile" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="destinations.html">Destinations</a>
+  <a href="about.html">About Us</a>
+  <a href="about.html#contact">Contact Us</a>
+</div>
+
+<!-- CONTACT SECTION -->
+<section class="section" id="contact">
+  <div class="section-inner">
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="contact-wrap">
+
+      <!-- Left: contact details -->
+      <div class="contact-info">
+        <h3>We'd Love to Hear From You</h3>
+        <p>Reply within 24 hours.</p>
+
+        <div class="contact-detail">
+          <div class="contact-icon">📍</div>
+          <div>
+            <strong>Our Office</strong>
+            <span>University College Sabah Foundation, Sembulan, Kota Kinabalu, Sabah</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">📞</div>
+          <div>
+            <strong>Phone / WhatsApp</strong>
+            <span>+60 12-345 6789</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">✉</div>
+          <div>
+            <strong>Email</strong>
+            <span>hello@mesratravel.my</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name"
+              placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email"
+              placeholder="you@email.com" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="destination">Interested In</label>
+          <select id="destination" name="destination">
+            <option value="">Choose a destination...</option>
+            <option>Semporna Island Hopping</option>
+            <option>Langkawi Retreat</option>
+            <option>Mount Kinabalu Climb</option>
+            <option>Kuala Lumpur Explorer</option>
+            <option>Custom Package</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message"
+            placeholder="Tell us your travel plans..."
+            required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary"
+          style="width:100%; justify-content:center;">
+          Send Message
+        </button>
+
+        <!-- Success message — JS shows this after submit -->
+        <div class="form-success" id="formSuccess">
+          Thank you! We will contact you within 24 hours.
+        </div>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <p class="nav-logo" style="color:#fff; margin-bottom:1rem;">Mesra Travel</p>
+        <p>Your trusted travel partner for unforgettable journeys across Malaysia.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>Kota Kinabalu, Sabah</li>
+          <li><a href="tel:+60123456789">+60 12-345 6789</a></li>
+          <li><a href="mailto:hello@mesratravel.my">hello@mesratravel.my</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <span>2026 Mesra Travel. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
