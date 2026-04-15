@@ -432,3 +432,61 @@ ul { list-style: none; }
   .footer-top { grid-template-columns: 1fr; }
   .about-stats { flex-direction: column; }
 }
+/* ===== SCROLL PROGRESS BAR ===== */
+#progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, #0a7a6e, #c98a1a);
+  z-index: 9999;
+  transition: width 0.1s ease;
+}
+
+/* ===== TYPING ANIMATION ===== */
+.typed-word {
+  color: #f0c96a;
+  font-style: normal;
+  border-right: 3px solid #f0c96a;
+  animation: blink 0.7s step-end infinite;
+  padding-right: 4px;
+}
+
+@keyframes blink {
+  0%, 100% { border-color: #f0c96a; }
+  50%       { border-color: transparent; }
+}
+
+/* ===== BACK TO TOP BUTTON ===== */
+#backToTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  background: var(--color-primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(10,122,110,0.4);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#backToTop.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#backToTop:hover {
+  background: #075f56;
+  transform: translateY(-3px);
+}
