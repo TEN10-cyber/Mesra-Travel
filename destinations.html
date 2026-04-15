@@ -37,138 +37,157 @@
   <a href="about.html#contact">Contact Us</a>
 </div>
 
+<main>
+
 <!-- PAGE HERO -->
 <section class="page-hero">
   <div class="page-hero-content">
-    <span class="hero-badge">Handpicked for You</span>
-    <h1>Explore Our Destinations</h1>
-    <p>From tropical beaches to highland adventures.</p>
+    <h1>Our Destinations</h1>
+    <p>Handpicked journeys across Malaysia's most breathtaking spots</p>
   </div>
 </section>
 
-<!-- FILTER BUTTONS + CARDS -->
-<section class="section">
+<!-- FILTER BUTTONS -->
+<section class="section" id="destinations">
   <div class="section-inner">
 
-    <!-- Filter buttons -->
     <div class="filter-bar">
       <button class="filter-btn active" data-filter="all">All</button>
       <button class="filter-btn" data-filter="beach">Beach</button>
-      <button class="filter-btn" data-filter="adventure">Adventure</button>
+      <button class="filter-btn" data-filter="mountain">Mountain</button>
+      <button class="filter-btn" data-filter="island">Island</button>
       <button class="filter-btn" data-filter="city">City</button>
-      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="jungle">Jungle</button>
     </div>
 
-    <!-- 8 Cards -->
-    <div class="cards-grid">
+    <!-- DESTINATION CARDS GRID -->
+    <div class="cards-grid" id="destinationGrid">
 
-      <article class="card dest-card" data-category="beach">
+      <article class="card reveal" data-category="beach">
         <div class="card-img-wrap">
-          <img src="images/01_semporna-sabah.jpg" alt="Semporna" />
+          <img src="01_semporna-sabah.jpg" alt="Semporna, Sabah" />
           <span class="card-badge">Beach</span>
         </div>
         <div class="card-body">
           <h3>Semporna Island Hopping</h3>
-          <p>Snorkel with whale sharks. Dive Sipadan.</p>
-          <p class="price">RM 1,299 <small>/ person</small></p>
-          <a href="about.html#contact" class="btn btn-primary">Book Now</a>
+          <p>Crystal-clear waters, vibrant coral reefs, and the chance to snorkel with whale sharks.</p>
+          <a href="about.html#contact" class="btn btn-outline-dark">View Package</a>
         </div>
       </article>
 
-      <article class="card dest-card" data-category="beach">
+      <article class="card reveal reveal-delay-1" data-category="island">
         <div class="card-img-wrap">
-          <img src="images/02_langkawi-beach.jpg" alt="Langkawi" />
+          <img src="02_langkawi-beach.jpg" alt="Langkawi Beach" />
+          <span class="card-badge">Island</span>
+        </div>
+        <div class="card-body">
+          <h3>Langkawi Duty-Free Retreat</h3>
+          <p>Cable car rides, mangrove kayaking, white sand beaches, and duty-free shopping.</p>
+          <a href="about.html#contact" class="btn btn-outline-dark">View Package</a>
+        </div>
+      </article>
+
+      <article class="card reveal reveal-delay-2" data-category="city">
+        <div class="card-img-wrap">
+          <img src="03_kuala-lumpur-night.jpg" alt="Kuala Lumpur at Night" />
+          <span class="card-badge">City</span>
+        </div>
+        <div class="card-body">
+          <h3>Kuala Lumpur City Explorer</h3>
+          <p>KLCC Twin Towers, Batu Caves, Petaling Street, and world-class dining.</p>
+          <a href="about.html#contact" class="btn btn-outline-dark">View Package</a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-category="mountain">
+        <div class="card-img-wrap">
+          <img src="04_mount-kinabalu-sunrise.jpg" alt="Mount Kinabalu Sunrise" />
+          <span class="card-badge">Mountain</span>
+        </div>
+        <div class="card-body">
+          <h3>Mount Kinabalu Sunrise Trek</h3>
+          <p>Conquer Southeast Asia's highest peak and witness a breathtaking sunrise at Low's Peak.</p>
+          <a href="about.html#contact" class="btn btn-outline-dark">View Package</a>
+        </div>
+      </article>
+
+      <article class="card reveal reveal-delay-1" data-category="city">
+        <div class="card-img-wrap">
+          <img src="05_penang-street-art.jpg" alt="Penang Street Art" />
+          <span class="card-badge">City</span>
+        </div>
+        <div class="card-body">
+          <h3>Penang Heritage & Street Art</h3>
+          <p>UNESCO heritage streets, famous street murals, Nyonya cuisine, and beach resorts.</p>
+          <a href="about.html#contact" class="btn btn-outline-dark">View Package</a>
+        </div>
+      </article>
+
+      <article class="card reveal reveal-delay-2" data-category="beach">
+        <div class="card-img-wrap">
+          <img src="06_tunku-rahman-park.jpg" alt="Tunku Abdul Rahman Park" />
           <span class="card-badge">Beach</span>
         </div>
         <div class="card-body">
-          <h3>Langkawi Retreat</h3>
-          <p>Cable car, mangrove kayaking, beach sunsets.</p>
-          <p class="price">RM 899 <small>/ person</small></p>
-          <a href="about.html#contact" class="btn btn-primary">Book Now</a>
-        </div>
-      </article>
-
-      <article class="card dest-card" data-category="adventure">
-        <div class="card-img-wrap">
-          <img src="images/04_mount-kinabalu-sunrise.jpg" alt="Mount Kinabalu" />
-          <span class="card-badge">Adventure</span>
-        </div>
-        <div class="card-body">
-          <h3>Mount Kinabalu Climb</h3>
-          <p>Summit Southeast Asia's highest peak at 4,095m.</p>
-          <p class="price">RM 1,699 <small>/ person</small></p>
-          <a href="about.html#contact" class="btn btn-primary">Book Now</a>
-        </div>
-      </article>
-
-      <article class="card dest-card" data-category="city">
-        <div class="card-img-wrap">
-          <img src="images/03_kuala-lumpur-night.jpg" alt="KL" />
-          <span class="card-badge">City</span>
-        </div>
-        <div class="card-body">
-          <h3>Kuala Lumpur Explorer</h3>
-          <p>KLCC, Batu Caves, street food and shopping.</p>
-          <p class="price">RM 799 <small>/ person</small></p>
-          <a href="about.html#contact" class="btn btn-primary">Book Now</a>
-        </div>
-      </article>
-
-      <article class="card dest-card" data-category="city">
-        <div class="card-img-wrap">
-          <img src="images/05_penang-street-art.jpg" alt="Penang" />
-          <span class="card-badge">City</span>
-        </div>
-        <div class="card-body">
-          <h3>Penang Heritage Trail</h3>
-          <p>UNESCO streets, street art and hawker food.</p>
-          <p class="price">RM 699 <small>/ person</small></p>
-          <a href="about.html#contact" class="btn btn-primary">Book Now</a>
-        </div>
-      </article>
-
-      <article class="card dest-card" data-category="nature">
-        <div class="card-img-wrap">
-          <img src="images/06_tunku-rahman-park.jpg" alt="Tunku Rahman" />
-          <span class="card-badge">Nature</span>
-        </div>
-        <div class="card-body">
           <h3>Tunku Abdul Rahman Park</h3>
-          <p>5 pristine islands, 20 minutes from KK city.</p>
-          <p class="price">RM 999 <small>/ person</small></p>
-          <a href="about.html#contact" class="btn btn-primary">Book Now</a>
+          <p>Five pristine islands just minutes from Kota Kinabalu — snorkelling and beach bliss.</p>
+          <a href="about.html#contact" class="btn btn-outline-dark">View Package</a>
         </div>
       </article>
 
-      <article class="card dest-card" data-category="nature">
+      <article class="card reveal" data-category="mountain">
         <div class="card-img-wrap">
-          <img src="images/07_kinabalu-park-trek.jpg" alt="Kinabalu Park" />
-          <span class="card-badge">Nature</span>
+          <img src="07_kinabalu-park-trek.jpg" alt="Kinabalu Park Trek" />
+          <span class="card-badge">Mountain</span>
         </div>
         <div class="card-body">
-          <h3>Kinabalu Rainforest Trek</h3>
-          <p>Cloud forest, pitcher plants, mountain hot springs.</p>
-          <p class="price">RM 849 <small>/ person</small></p>
-          <a href="about.html#contact" class="btn btn-primary">Book Now</a>
+          <h3>Kinabalu Park Nature Walk</h3>
+          <p>UNESCO World Heritage rainforest with rare orchids, pitcher plants, and forest trails.</p>
+          <a href="about.html#contact" class="btn btn-outline-dark">View Package</a>
         </div>
       </article>
 
-      <article class="card dest-card" data-category="adventure">
+      <article class="card reveal reveal-delay-1" data-category="jungle">
         <div class="card-img-wrap">
-          <img src="images/08_sabah-jungle-river.jpg" alt="Padas River" />
-          <span class="card-badge">Adventure</span>
+          <img src="08_sabah-jungle-river.jpg" alt="Sabah Jungle River" />
+          <span class="card-badge">Jungle</span>
         </div>
         <div class="card-body">
-          <h3>Padas River Rafting</h3>
-          <p>Grade 3-4 rapids on Sabah's most thrilling river.</p>
-          <p class="price">RM 349 <small>/ person</small></p>
-          <a href="about.html#contact" class="btn btn-primary">Book Now</a>
+          <h3>Sabah Jungle River Safari</h3>
+          <p>River cruises spotting proboscis monkeys, crocodiles, and fireflies at night.</p>
+          <a href="about.html#contact" class="btn btn-outline-dark">View Package</a>
         </div>
       </article>
 
-    </div><!-- end cards-grid -->
+      <article class="card reveal reveal-delay-2" data-category="beach">
+        <div class="card-img-wrap">
+          <img src="09_malaysia-beach-hero.jpg" alt="Malaysia Beach" />
+          <span class="card-badge">Beach</span>
+        </div>
+        <div class="card-body">
+          <h3>Malaysia Beach Escape</h3>
+          <p>Turquoise waters, white sands, and a peaceful retreat away from the city hustle.</p>
+          <a href="about.html#contact" class="btn btn-outline-dark">View Package</a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-category="mountain">
+        <div class="card-img-wrap">
+          <img src="10_kinabalu-amazing-summit.jpg" alt="Kinabalu Summit" />
+          <span class="card-badge">Mountain</span>
+        </div>
+        <div class="card-body">
+          <h3>Kinabalu Summit Challenge</h3>
+          <p>The ultimate Borneo adventure — guided summit climb with overnight stay at Laban Rata.</p>
+          <a href="about.html#contact" class="btn btn-outline-dark">View Package</a>
+        </div>
+      </article>
+
+    </div>
   </div>
 </section>
+
+</main>
 
 <!-- FOOTER -->
 <footer class="site-footer">
@@ -177,7 +196,17 @@
 
       <div class="footer-brand">
         <p class="nav-logo" style="color:#fff; margin-bottom:1rem;">Mesra Travel</p>
-        <p>Your trusted travel partner for unforgettable journeys across Malaysia.</p>
+        <p>Your trusted travel partner for unforgettable journeys across Malaysia and Asia.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Destinations</h4>
+        <ul>
+          <li><a href="destinations.html">Semporna</a></li>
+          <li><a href="destinations.html">Langkawi</a></li>
+          <li><a href="destinations.html">Penang</a></li>
+          <li><a href="destinations.html">Kuala Lumpur</a></li>
+        </ul>
       </div>
 
       <div class="footer-col">
@@ -193,7 +222,7 @@
       <div class="footer-col">
         <h4>Contact Us</h4>
         <ul>
-          <li>Kota Kinabalu, Sabah</li>
+          <li>University College Sabah Foundation, Kota Kinabalu, Sabah</li>
           <li><a href="tel:+60123456789">+60 12-345 6789</a></li>
           <li><a href="mailto:hello@mesratravel.my">hello@mesratravel.my</a></li>
         </ul>
