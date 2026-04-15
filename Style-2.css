@@ -379,6 +379,31 @@ ul { list-style: none; }
 @media (max-width: 480px) {
   .cards-grid { grid-template-columns: 1fr; }
 }
+/* ===== SCROLL PROGRESS BAR ===== */
+#progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, #0a7a6e, #c98a1a);
+  z-index: 9999;
+  transition: width 0.1s ease;
+}
+
+/* ===== TYPING ANIMATION ===== */
+.typed-word {
+  color: #f0c96a;
+  font-style: normal;
+  border-right: 3px solid #f0c96a;
+  animation: blink 0.7s step-end infinite;
+  padding-right: 4px;
+}
+
+@keyframes blink {
+  0%, 100% { border-color: #f0c96a; }
+  50%       { border-color: transparent; }
+}
 /* ===== BACK TO TOP BUTTON ===== */
 #backToTop {
   position: fixed;
