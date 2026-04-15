@@ -53,7 +53,7 @@ initScrollReveal();
 
 function initFilter() {
   var buttons = document.querySelectorAll('.filter-btn');
-  var cards   = document.querySelectorAll('.dest-card');
+  var cards   = document.querySelectorAll('.card');
 
   if (!buttons.length) return; // stops here if not on destinations page
 
